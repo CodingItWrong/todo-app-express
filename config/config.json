@@ -14,6 +14,14 @@
     "dialect": "postgres",
     "logging": false
   },
+  "ci": {
+    "username": "postgres",
+    "password": null,
+    "database": "circle_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false
+  },
   "production": {
     "use_env_variable": "DATABASE_URL"
   }
