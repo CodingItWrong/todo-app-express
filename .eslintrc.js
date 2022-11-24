@@ -8,9 +8,16 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module',
   },
   rules: {
     quotes: ['error', 'single', {avoidEscape: true}], // single quote unless using interpolation
   },
+  overrides: [
+    {
+      files: ['migrations/*.js', 'models/*.js', 'seeders/*.js'],
+      rules: {
+        'no-unused-vars': 'off',
+      },
+    },
+  ],
 };
