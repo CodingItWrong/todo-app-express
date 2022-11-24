@@ -1,9 +1,6 @@
 const todoRepo = require('./todoRepo');
 const {Todo} = require('../models');
 
-// TODO: automatically migrate the DB before test run
-// TODO: run test in a DB transaction to automatically roll back
-
 describe('todoRepo', () => {
   afterEach(() => {
     Todo.destroy({truncate: true});
