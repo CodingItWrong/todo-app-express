@@ -18,8 +18,9 @@
     "start": "nodemon src/index.js",
     "seq": "sequelize",
     "migrate:test": "sequelize db:migrate --env=test",
+    "migrate:ci": "sequelize db:migrate --env=ci",
     "test": "yarn migrate:test && jest --watchAll",
-    "test:ci": "yarn migrate:test && NODE_ENV=ci jest",
+    "test:ci": "yarn migrate:ci && NODE_ENV=ci jest",
     "lint": "eslint ."
   },
   "dependencies": {
