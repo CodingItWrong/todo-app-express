@@ -1,6 +1,6 @@
-# My Project
+# todo-app-express
 
-Describe your project here.
+A REST backend for a todo app, implemented in Express.js
 
 ## Requirements
 
