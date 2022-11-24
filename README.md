@@ -6,6 +6,7 @@ A REST backend for a todo app, implemented in Express.js
 
 - [Node](https://nodejs.org)
 - [Yarn 1.x](https://classic.yarnpkg.com/lang/en/)
+- Postgres
 
 ## Installation
 
@@ -14,6 +15,6 @@ A REST backend for a todo app, implemented in Express.js
 
 Dependencies are locked with `yarn.lock`; please use `yarn` rather than `npm` for installing.
 
-## Unit Tests
+## Automated Tests
 
 - Run `yarn test`
