@@ -1,2 +1,6 @@
 const db = require('./models');
-afterAll(() => db.sequelize.close());
+
+// fix "A worker process has failed to exit gracefully" warning
+afterAll(() => {
+  db.sequelize.close();
+});
