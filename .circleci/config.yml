@@ -29,11 +29,6 @@ jobs:
           key: v2-dependencies-{{ checksum "yarn.lock" }}
 
       - run:
-          name: set up database
-          command: |
-            yarn seq db:migrate --env=ci
-
-      - run:
           name: run tests
           command: yarn test:ci
 
