@@ -26,5 +26,8 @@
     "pg": "^8.8.0",
     "sequelize": "^6.25.8",
     "sequelize-cli": "^6.5.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["./jestSetupAfterEnv.js"]
   }
 }
