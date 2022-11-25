@@ -22,6 +22,7 @@
     "seq": "sequelize",
     "migrate:test": "sequelize db:migrate --env=test",
     "migrate:ci": "sequelize db:migrate --env=ci",
+    "migrate:prod": "sequelize db:migrate --env=prod",
     "test": "yarn migrate:test && jest --watchAll",
     "test:ci": "yarn migrate:ci && NODE_ENV=ci jest",
     "lint": "eslint ."
