@@ -18,3 +18,7 @@ Dependencies are locked with `yarn.lock`; please use `yarn` rather than `npm` fo
 ## Automated Tests
 
 - Run `yarn test`
+
+## License
+
+MIT
