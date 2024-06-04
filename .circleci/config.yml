@@ -3,7 +3,7 @@ jobs:
   test:
     docker:
       # specify the version you desire here
-      - image: cimg/node:18.20.3
+      - image: cimg/node:20.14.0
       - image: cimg/postgres:14.5
 
     working_directory: ~/repo
@@ -27,6 +27,10 @@ jobs:
           paths:
             - node_modules
           key: v2-dependencies-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: lint
+          command: yarn lint
 
       - run:
           name: run tests

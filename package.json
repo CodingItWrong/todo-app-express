@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "license": "MIT",
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
