@@ -3,7 +3,7 @@ jobs:
   test:
     docker:
       # specify the version you desire here
-      - image: cimg/node:18.12.1
+      - image: cimg/node:18.20.3
       - image: cimg/postgres:14.5
 
     working_directory: ~/repo
